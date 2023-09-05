@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a,
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+.body-container {
+  text-align: center;
+  width: 90%;
+  padding: 1rem;
+  margin: auto;
+  overflow: auto;
+  background-color: #E9DADA ;
+  border: #9573ad solid 2rem;
+  border-style: double;
+  
+}
+.header-container {
+  grid-column: 1/3;
+  background-color: rgb(204, 180, 71);
+  padding: 1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow: auto;
+}
+.nav-container {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  border-bottom: solid rgb(12, 216, 22);
+  background-color: bisque;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main-container {
+  grid-row: 3/4;
+  grid-column: 1/3;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  background-color: beige;
+  overflow: auto;
+}
+
+.footer-container {
+  grid-row: 4;
+  grid-column: 1/3;
+  padding: 1rem;
+}
+.nav-container ul {
+  display: flex;
+  justify-content: center;
+}
+.nav-container ul li {
+  padding: 1em;
+}
+
+/* main column grid */
+.about-class {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  padding: 1rem;
+}
+.skills-class {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 1rem;
+}
+.contact-class {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 1rem;
+}
+/* End main column grid */
+
+.about-class{
+    /* background-color: aquamarine; */
+    border: 5px double rgb(255, 102, 0);
+}
+.skills-class{
+    border: 5px double rgb(10, 231, 247);
+}
+.contact-class{
+    border: 5px double rgb(58, 9, 239);
+}
+.footer-container{
+    border: 5px double rgb( 223, 255, 0 );
+    background-color: azure;
+}
+
+
+.ul--style li{
+    padding: 1rem;
+}
+
+
+@media(max-width:500px){
+    .body-container{
+        display: grid;
+        grid-template-columns:1fr;
+        overflow: auto;
+      }
+    .nav-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about-class {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 1rem;
+      }
+      .skills-class {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 1rem;
+      }
+      .contact-class {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 1rem;
+      }
+}

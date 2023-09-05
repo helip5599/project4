@@ -1,0 +1,59 @@
+.body-container{
+    display: grid;
+	background-repeat: no-repeat;
+	background-color: rgb(235, 208, 217);
+    border-style: double;
+    grid-template-areas: 
+    'header header header'
+    'main main main'
+    'main main  main'
+    'footer footer footer';
+}
+p {
+	border: 2px solid rgb(255, 26, 255);
+	border-radius: 5px;
+  }
+.navbar-container{
+    grid-area: header;
+}
+.main-container{
+    grid-area: main;
+	/* background-color: rgb(104, 192, 222); */
+}
+.footer-container{
+    grid-area: footer;
+	/* background-color: rgb(176, 163, 195);  */
+}
+.about-class{
+    animation: myAnim 3s ease 0s 1 normal forwards;
+}
+
+/* Animation Key frame */
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
+	}
+}
